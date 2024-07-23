@@ -33,7 +33,9 @@ video {
 	font: inherit;
 	vertical-align: baseline; 
 	object-fit: cover;
-	position: relative; }
+	position: relative;
+	overflow: hidden;
+	max-width: 100%; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
