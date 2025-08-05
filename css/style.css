@@ -17,6 +17,7 @@ body {
     padding: 20px;
     border-right: 1px solid #ddd;
     overflow-y: auto;
+    text-align: center;
 }
 .profile-pic {
     width: 100%;
@@ -58,4 +59,27 @@ video {
 .feature-icons li {
     flex: 0 0 50%;
     padding: 5px 0;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.social-item i {
+    font-size: 18px;
+    color: #333;
+}
+.social-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-item a:hover {
+    text-decoration: underline;
 }
