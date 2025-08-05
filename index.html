@@ -21,6 +21,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#resume">Resume/CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </aside>
@@ -28,9 +29,15 @@
             <header class="top-header">
                 <h2>Phoenix Pham</h2>
                 <div class="socials">
-                    <a href="https://github.com/phoenixpham"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/phoenix-pham"><i class="fab fa-linkedin"></i></a>
-                    <span><i class="fas fa-map-marker-alt"></i> Berkeley, CA</span>
+                    <div class="social-item">
+                        <i class="fab fa-github"></i> <a href="https://github.com/phoenixpham" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="social-item">
+                        <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/phoenix-pham" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    <div class="social-item">
+                        <i class="fas fa-map-marker-alt"></i> Berkeley, CA
+                    </div>
                 </div>
             </header>
             <section id="about">
@@ -120,6 +127,22 @@
             <section id="resume">
                 <h3>Resume/CV</h3>
                 <a href="resume.pdf" target="_blank">Download Resume</a>
+            </section>
+            <section id="contact">
+                <h3>Contact Me</h3>
+                <p>If you have any questions, please feel free to <strong>contact me</strong> here.</p>
+                <form action="https://formsubmit.co/10d771632cb9ffdac8d5bc99786ce8db" method="POST" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+            
+                    <button type="submit">Send Message</button>
+                </form>
             </section>
         </main>
     </div>
