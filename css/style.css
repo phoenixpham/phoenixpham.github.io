@@ -2,54 +2,92 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
     color: #333;
+    background-color: #f9f9f9;
 }
+
 .container {
     display: flex;
-    min-height: 100vh;
 }
+
 .sidebar {
-    background-color: #2e2e2e;
+    background-color: #2f2f2f;
     color: white;
-    padding: 20px;
     width: 250px;
-    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
 }
-.profile-pic {
+
+.sidebar .profile-pic {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
 }
+
 .sidebar h1 {
+    text-align: center;
+    font-size: 1.5em;
     margin: 10px 0;
 }
+
+.sidebar p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
 .sidebar nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
+
 .sidebar nav ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
+
 .sidebar nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 .content {
-    flex-grow: 1;
-    padding: 40px;
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
 }
+
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .socials a, .socials span {
     margin-left: 10px;
-    color: #333;
+    color: #555;
     text-decoration: none;
 }
-h3 {
-    border-bottom: 2px solid #ccc;
+
+section {
+    margin-top: 30px;
+}
+
+section h3 {
+    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    margin: 5px 0;
+}
+
+video {
+    width: 100%;
+    margin: 5px 0;
 }
