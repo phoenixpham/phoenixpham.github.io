@@ -30,6 +30,15 @@ body {
     margin: 0 auto 20px auto;
     display: block;
 }
+.sidebar h1 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+.sidebar p {
+    margin: 5px 0 15px;
+    font-size: 14px;
+    color: #ccc;
+}
 .sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -44,12 +53,17 @@ body {
 .sidebar nav ul li a:hover {
     color: #ddd;
 }
+.sidebar-bottom-image {
+    margin-top: 15px;
+}
 .sidebar-bottom-image img {
     width: 100%;
-    max-width: 120px;
-    margin: 20px auto 0;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
     display: block;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 .content {
     margin-left: 300px;
@@ -162,7 +176,6 @@ video {
 
 /* Phones */
 @media (max-width: 768px) {
-    /* Stack sidebar on top */
     .sidebar {
         position: relative;
         width: 100%;
@@ -172,6 +185,12 @@ video {
 
         flex-direction: column;
         justify-content: flex-start;
+    }
+    .sidebar-bottom-image {
+        margin-top: 10px;
+    }
+    .sidebar-bottom-image img {
+        max-width: 150px;
     }
     .content {
         margin-left: 0;
@@ -200,6 +219,9 @@ video {
     .profile-pic {
         width: 80px;
         height: 80px;
+    }
+    .sidebar-bottom-image img {
+        max-width: 120px;
     }
     .contact-form button {
         font-size: 14px;
