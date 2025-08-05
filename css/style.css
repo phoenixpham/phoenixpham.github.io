@@ -27,6 +27,20 @@ body {
     margin: 0 auto 20px auto;
     display: block;
 }
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar nav ul li a {
+    color: white;       
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0;
+}
+.sidebar nav ul li a:hover {
+    color: #ddd;
+}
 .content {
     margin-left: 300px;
     padding: 40px;      
@@ -49,20 +63,6 @@ img {
 video {
     width: 100%;
     height: 100%;
-}
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-}
-.sidebar nav ul li a {
-    color: white;       
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding: 8px 0;
-}
-.sidebar nav ul li a:hover {
-    color: #ddd;
 }
 .feature-icons {
     list-style: none;
@@ -107,7 +107,6 @@ video {
     font-weight: bold;
     margin-bottom: 4px;
 }
-
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
@@ -129,4 +128,67 @@ video {
 }
 .contact-form button:hover {
     background-color: #555;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.image-gallery img {
+    width: calc(33.333% - 10px);
+    height: auto;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .content {
+        margin-left: 270px;
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    /* Stack sidebar on top */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        text-align: center;
+    }
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    .feature-icons li {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .image-gallery img {
+        width: 100%;
+    }
+    img, video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    .content {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
