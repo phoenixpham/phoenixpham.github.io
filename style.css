@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -20,32 +21,36 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
+
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 10px auto;
     display: block;
 }
-.sidebar-top {
-    flex-grow: 1;
-}
+
 .sidebar h1 {
-    margin: 5px 0 0 0;
+    margin: 5px 0 2px 0;
     font-size: 20px;
     line-height: 1.2;
 }
+
 .sidebar p {
-    margin: 2px 0 15px 0;
+    margin: 0 0 12px 0;
     font-size: 14px;
     color: #ccc;
 }
+
 .sidebar nav ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 15px;
 }
+
 .sidebar nav ul li a {
     color: white;       
     text-decoration: none;
@@ -53,89 +58,106 @@ body {
     display: block;
     padding: 8px 0;
 }
+
 .sidebar nav ul li a:hover {
     color: #ddd;
 }
-.sidebar-bottom-image {
-    margin-top: 10px;
-    padding-bottom: 5px;
-    flex-shrink: 0;
+
+.sidebar-image {
+    margin-top: auto;
+    padding-top: 10px;
 }
-.sidebar-bottom-image img {
+
+.sidebar-image img {
     width: 90%;
-    max-width: 180px;
+    max-width: 200px;
     height: auto;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
 }
+
 .content {
     margin-left: 300px;
     padding: 40px;      
     max-width: 900px;
 }
+
 .content h3 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
+
 #projects section h3 {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 5px;
 }
+
 img {
     width: 100%;
     height: 100%;
 }
+
 video {
     width: 100%;
     height: 100%;
 }
+
 .feature-icons {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
+
 .feature-icons li {
     flex: 0 0 50%;
     padding: 5px 0;
 }
+
 .socials {
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin-top: 10px;
 }
+
 .social-item {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .social-item i {
     font-size: 18px;
     color: #333;
 }
+
 .social-item a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
 }
+
 .social-item a:hover {
     text-decoration: underline;
 }
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
     max-width: 500px;
 }
+
 .contact-form label {
     font-weight: bold;
     margin-bottom: 4px;
 }
+
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
@@ -145,6 +167,7 @@ video {
     width: 100%;
     box-sizing: border-box;
 }
+
 .contact-form button {
     background-color: #333;
     color: white;
@@ -155,14 +178,17 @@ video {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .contact-form button:hover {
     background-color: #555;
 }
+
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
 }
+
 .image-gallery img {
     width: 100%;
     height: auto;
@@ -187,15 +213,6 @@ video {
         height: auto;
         border-right: none;
         text-align: center;
-
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .sidebar-bottom-image {
-        margin-top: 10px;
-    }
-    .sidebar-bottom-image img {
-        max-width: 150px;
     }
     .content {
         margin-left: 0;
@@ -217,6 +234,7 @@ video {
         height: auto;
     }
 }
+
 @media (max-width: 480px) {
     .content {
         padding: 15px;
@@ -225,7 +243,7 @@ video {
         width: 80px;
         height: 80px;
     }
-    .sidebar-bottom-image img {
+    .sidebar-image img {
         max-width: 120px;
     }
     .contact-form button {
