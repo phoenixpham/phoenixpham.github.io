@@ -28,6 +28,11 @@ body {
     padding: 40px;      
     max-width: 900px;
 }
+.content h3 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
 img {
     width: 200px;
     height: auto;
