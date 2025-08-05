@@ -31,11 +31,11 @@ body {
     display: block;
 }
 .sidebar h1 {
-    margin: 5px 0;
+    margin: 5px 0 2px 0;
     font-size: 20px;
 }
 .sidebar p {
-    margin: 5px 0 15px;
+    margin: 0 0 12px 0;
     font-size: 14px;
     color: #ccc;
 }
@@ -54,10 +54,11 @@ body {
     color: #ddd;
 }
 .sidebar-bottom-image {
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-bottom: 5px;
 }
 .sidebar-bottom-image img {
-    width: 100%;
+    width: 90%;
     max-width: 200px;
     height: auto;
     border-radius: 5px;
