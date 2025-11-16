@@ -268,7 +268,7 @@ video {
 
 .gif-small {
   width: 60%;
-  max-width: 400px;
+  max-width: 200px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -278,7 +278,7 @@ video {
   width: 150px;
   height: auto;
   display: block;
-  margin: 0.5rem auto;
+  margin: 0.25rem auto;
 }
 
 .grid-wrapper {
