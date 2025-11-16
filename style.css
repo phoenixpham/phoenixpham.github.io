@@ -75,6 +75,20 @@ body {
   display: inline-block;
 }
 
+.subsection {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.subsection li {
+    margin-bottom: 10px;
+}
+
+.subsection .image-gallery {
+    margin-left: 20px;
+}
+
 .sidebar nav ul li a:hover {
     color: #ddd;
 }
@@ -211,13 +225,13 @@ video {
     gap: 10px;
 }
 
-
 .image-gallery img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
 }
+
 
 .gallery-item {
   text-align: center;
@@ -258,6 +272,13 @@ video {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.preview-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto;
 }
 
 .grid-wrapper {
@@ -329,6 +350,9 @@ video {
     }
     .image-gallery img {
         width: 100%;
+    }
+    .preview-img {
+    width: 100px;
     }
     .image-gallery.six-wide {
         grid-template-columns: repeat(2, 1fr);
