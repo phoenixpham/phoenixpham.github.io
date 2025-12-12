@@ -284,8 +284,8 @@ video {
 }
 
 .gif-big {
-  width: 100%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
