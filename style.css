@@ -357,7 +357,7 @@ video {
         text-align: center;
     }
     .image-gallery img {
-        width: 100%;
+        width: 80%;
     }
     .preview-img {
     width: 100px;
@@ -366,7 +366,7 @@ video {
         grid-template-columns: repeat(2, 1fr);
     }
     img, video {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     pre {
