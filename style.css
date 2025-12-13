@@ -226,14 +226,14 @@ video {
 }
 
 .image-gallery img {
-    width: 75%;
+    width: 60%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
 }
 
 .image-gallery source {
-    width: 75%;
+    width: 60%;
     height: auto;
 }
 
