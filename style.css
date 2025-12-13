@@ -274,6 +274,14 @@ video {
   margin: 0 auto;
 }
 
+.gif-big {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .preview-img {
   width: 150px;
   height: auto;
