@@ -226,12 +226,16 @@ video {
 }
 
 .image-gallery img {
-    width: 100%;
+    width: 75%;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
 }
 
+.image-gallery source {
+    width: 75%;
+    height: auto;
+}
 
 .gallery-item {
   text-align: center;
@@ -357,7 +361,7 @@ video {
         text-align: center;
     }
     .image-gallery img {
-        width: 80%;
+        width: 100%;
     }
     .preview-img {
     width: 100px;
@@ -366,7 +370,7 @@ video {
         grid-template-columns: repeat(2, 1fr);
     }
     img, video {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
     pre {
