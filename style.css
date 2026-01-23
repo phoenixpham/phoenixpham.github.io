@@ -329,6 +329,19 @@ video {
   margin-top: 5px;
 }
 
+#resume {
+  display: flex;
+  flex-direction: column;
+}
+
+#resume iframe {
+  display: block;
+  margin: auto;
+  width: 65vw;
+  max-width: 900px;
+  height: 75vh;
+  border: none;
+}
 
 /* Tablets */
 @media (max-width: 1024px) {
