@@ -7,15 +7,11 @@ body {
     scroll-behavior: smooth;
 }
 
-:root {
-    --sidebar-width: 290px;
-}
-
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: var(--sidebar-width);
+    width: 250px;
     height: 100%;
     background-color: #333;
     color: white;
@@ -26,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-sizing: border-box;
 }
 
 .profile-pic {
@@ -114,10 +109,9 @@ body {
 }
 
 .content {
-    margin-left: calc(var(--sidebar-width) + 24px);
+    margin-left: 300px;
     padding: 40px;      
-    max-width: calc(100vw - var(--sidebar-width) - 64px);
-    box-sizing: border-box;
+    max-width: 900px;
 }
 
 .content h3 {
@@ -351,13 +345,10 @@ video {
 
 /* Tablets */
 @media (max-width: 1024px) {
-    :root {
-        --sidebar-width: 260px;
-    }
     .content {
-        margin-left: calc(var(--sidebar-width) + 20px);
+        margin-left: 270px;
         padding: 20px;
-        max-width: calc(100vw - var(--sidebar-width) - 40px);
+        max-width: 100%;
     }
 }
 
